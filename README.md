@@ -4,7 +4,7 @@
 Travis Builder is a basic library to make things easier while working with Travis build system.
 So let's start first showing you how to add a travis badge to your project. Add the text below to your md file: 
 ```
-![Build Status](https://travis-ci.com/ThankfulBird/saber.svg?branch=master)
+![Build Status](https://travis-ci.com/your-github-name/project-name.svg?branch=master)
 ```
 Then open Travis [web page](https://travis-ci.org/) and synchronise you Github account.
 After that compile travis.test file in the location which you create your project. Then run compiled file with one argument which is the name of your project in Github(__in URL link__).
