@@ -33,7 +33,7 @@ void create_travis_file()
 void create_shell_script()
 {
     char shell_script_content[DEFAULT_SIZE];
-    sprintf(shell_script_content, "make cleanmake\n./test/%s.test.out\ngcov ./lib/%s.h\n", project_name, project_name);
+    sprintf(shell_script_content, "make clean\nmake\n./test/%s.test.out\ngcov ./lib/%s.h\n", project_name, project_name);
     FILE * shell_script = fopen("run_coverage_test.sh", "w");
     fprintf(shell_script, "%s", shell_script_content);
     fclose(shell_script);
